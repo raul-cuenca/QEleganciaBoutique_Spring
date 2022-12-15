@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "c383948c-74ad-4afe-b22e-28f52fbdcb97",
+		"name": "QELEGANCIA_BOUTIQUE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19564943"
+	},
+	"item": [
+		{
+			"name": "CLIENTES",
+			"item": [
+				{
+					"name": "Listar Todos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/clientes/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"clientes",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Karla Elisa\",\r\n    \"apellido\": \"Sorin Vega\",\r\n    \"nroDocumento\": \"12344523\",\r\n    \"telefono\": \"991126759\",\r\n    \"direccion\": \"Los Cantaros 347\",\r\n    \"urlimagen\": \"https://creamas.org/wp-content/uploads/2017/08/foto-edi-pasaporte-carnet-.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/clientes/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"clientes",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/clientes/listar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"clientes",
+								"listar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCliente\": 1,\r\n    \"nombre\": \"raul jose\",\r\n    \"apellido\": \"cuenca sarrin\",\r\n    \"nroDocumento\": \"76762535\",\r\n    \"telefono\": \"998982234\",\r\n    \"direccion\": \"Av Las Praderas 763\",\r\n    \"urlimagen\": \"https://creamas.org/wp-content/uploads/2017/08/foto-edi-pasaporte-carnet-.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/clientes/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"clientes",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PRODUCTOS",
+			"item": [
+				{
+					"name": "Listar Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/productos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"productos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Pelota Futbol\",\r\n    \"descripcion\": \"Nro 5 - Argentina\",\r\n    \"categoria\": \"Juguetes\",\r\n    \"marca\": \"Adidas\",\r\n    \"precio\": 79.0,\r\n    \"urlimagen\": \"https://home.ripley.com.pe/Attachment/WOP_5/2020294845987/2020294845987-1.jpg\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/productos/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"productos",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/productos/listar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"productos",
+								"listar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProducto\": 1,\r\n    \"nombre\": \"Pelota Futbol\",\r\n    \"descripcion\": \"Nro 5 - Argentina\",\r\n    \"categoria\": \"Juguetes\",\r\n    \"marca\": \"Adidas\",\r\n    \"precio\": 79.0,\r\n    \"urlimagen\": \"https://home.ripley.com.pe/Attachment/WOP_5/2020294845987/2020294845987-1.jpg\",\r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/productos/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"productos",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROVEEDORES",
+			"item": [
+				{
+					"name": "Listar Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/proveedores/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"proveedores",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Chinese Import SAC\",\r\n    \"ruc\": \"20955436766\",\r\n    \"direccion\": \"Las Begonias 663 Int 495A - MIRAFLORES\",\r\n    \"telefono\": \"922178609\",\r\n    \"urlimagen\": \"https://gestionpyme.com/wp-content/uploads/2015/09/shutterstock_227788621.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/proveedores/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"proveedores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9999/api/proveedores/listar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"proveedores",
+								"listar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idProveedor\": 1,\r\n    \"nombre\": \"Import Salt SAC\",\r\n    \"ruc\": \"20987367466\",\r\n    \"direccion\": \"Jr Cusco 122 Int 403\",\r\n    \"telefono\": \"998927637\",\r\n    \"urlimagen\": \"https://www.zarla.com/images/zarla-comercial-global-1x1-2400x2400-20220413-gbcvvck84d9wkrrfcdhv.png?crop=1:1,smart&width=250&dpr=2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9999/api/proveedores/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"proveedores",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
