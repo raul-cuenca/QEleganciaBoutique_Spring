@@ -1,5 +1,10 @@
+
+-- 1. Ejecutar primero, antes de correr el proyecto Spring Java
+
 create database qelegancia_boutique;
 use qelegancia_boutique;
+
+-- 2. Ejecutar luego de correr el proyecto Spring Java
 
 select * from producto;
 insert into producto(nombre,descripcion,categoria,marca,precio,urlimagen,estado)values
